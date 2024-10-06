@@ -29,7 +29,7 @@
 export default {
   data() {
     return {
-      title: 'Test Images Page',
+      title: 'Images Page',
       images: []
     };
   },
@@ -41,6 +41,14 @@ export default {
     } catch (error) {
       console.error('Error fetching images:', error);
     }
+  },
+  head() {
+    return {
+      title: 'Images - My Nuxt App',
+      meta: [
+        { hid: 'test description', name: 'test description', content: 'Exploring the images feature :)' }
+      ]
+    };
   }
 };
 </script>

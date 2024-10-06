@@ -62,6 +62,14 @@ export default {
         { id: 9, tooltip: '' }
       ]
     };
+  },
+  head() {
+    return {
+      title: 'Grid - My Nuxt App',
+      meta: [
+        { hid: 'test description', name: 'test description', content: 'Exploring my grid feature :)' }
+      ]
+    };
   }
 };
 </script>

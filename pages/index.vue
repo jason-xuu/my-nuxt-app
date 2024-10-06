@@ -44,8 +44,16 @@ export default {
       sidebarContent: 'Sidebar content goes here.',
       mainContent: 'Main content goes here.'
     };
+  },
+  head() {
+    return {
+      title: 'Home Page - My Nuxt App',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Welcome to the home page :)' }
+      ]
+    };
   }
-}
+};
 </script>
 
 <style scoped>

@@ -46,13 +46,21 @@ export default {
         'Section 3': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.'
       },
       activeAccordion: null,
-      panelMaxHeight: '100px' // Adjust this value as needed
+      panelMaxHeight: '100px' 
     };
   },
   methods: {
     toggleAccordion(title) {
       this.activeAccordion = this.activeAccordion === title ? null : title;
     }
+  },
+  head() {
+    return {
+      title: 'Accordion - My Nuxt App',
+      meta: [
+        { hid: 'test description', name: 'test description', content: 'Exploring my accordion feature :)' }
+      ]
+    };
   }
 }
 </script>
